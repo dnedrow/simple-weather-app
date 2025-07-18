@@ -3,7 +3,14 @@
 This is a coding challenge for iOS developers.  
 
 # Prerequisites
-Candidate should have Xcode and Git installed on their machine.
+Candidate should have Xcode 15.4+, at least one 15+ model iPhone emulator
+installed, and Git installed on their machine.
+
+# Relax
+- We're more concerned with your thought process and how you approach the
+  problem than the final product.
+- Don't worry about the time. We are looking for a working app, not a
+  polished one.
 
 # Step 1
 **Fork** this repository on GitHub and **clone** it.
@@ -27,8 +34,7 @@ Note: You can use the above query's response to create your data model.
 Please use the latitude and longitude of the following cities to fetch
 temperature and rainfall conditions for every hour of the day. A day is
 considered to run from 00:00:00 through 23:59:59. Hours should be displayed in
-the app according to the device's time display option 
-(_Settings→General→Date&Time→24-Hour Time_).
+the app according to the device's time display option.
 
 | City | Lat  | Long |
 | ------- | --- | --- |
@@ -37,7 +43,8 @@ the app according to the device's time display option
 | Miami | 25.77 | -80.19 |
 
 Use the images included in the `assets` folder (in the root directory of your
-local clone) for a visual indicator of the weather conditions.
+local clone) for a visual indicator of the weather conditions. There are three
+images for each asset. Talk us through why you choose a particular type.
 
 | Precipitation | Weather Condition | Image |
 | ------------- | ----------------- | ----- |
@@ -64,12 +71,6 @@ Here is a rough design for the sample app...
 - Clean, readable code
 - Knowledge of MVVM, delegation, UI and navigation, fetching and parsing JSON
   data, git.
-
-# Relax
-- We're more concerned with your thought process and how you approach the
-  problem than the final product.
-- Don't worry about the time. We are looking for a working app, not a
-  polished one.
 
 # Acknowledgements
 Weather image assets <a href="http://www.freepik.com">designed by

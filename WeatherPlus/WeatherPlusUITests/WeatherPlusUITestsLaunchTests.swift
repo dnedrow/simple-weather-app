@@ -2,7 +2,7 @@
 //  WeatherPlusUITestsLaunchTests.swift
 //  WeatherPlusUITests
 //
-//  Created by David Nedrow on 5/19/25.
+//  Created by David Nedrow on 5/27/25.
 //
 
 import XCTest
@@ -17,7 +17,6 @@ final class WeatherPlusUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
