@@ -1,24 +1,28 @@
-<h1 id="ioscodingassignment">iOS Coding Assignment</h1>
-<p>This is a coding challenge for iOS developers.  </p>
-<h1 id="prerequisites">Prerequisites</h1>
-<p>The candidate should have Xcode 15.4+, at least one iPhone 15+ model
-iPhone emulator installed, and Git installed on their machine.</p>
-<h1 id="relax">Relax</h1>
+<h1>iOS Coding Assignment</h1>
+<p>This is a coding challenge for iOS developers.</p>
+<h1>Prerequisites</h1>
+<h2>All candidates</h2>
+<p>Candidate <strong>must</strong> have git installed on their machine.</p>
+<h2>Candidate on pre-Tahoe macOS</h2>
+<p>Candidate must have Xcode 15.4+, and at least one iOS 15+ model iPhone emulator</p>
+<h2>Candidate with Tahoe (macOS 26+)</h2>
+<p>Candidate must have Xcode 26+, and at least one iOS 26+ model iPhone emulator</p>
+<h1>Relax</h1>
 <ul>
 <li>We're more concerned with your thought process and how you approach the
 problem than the final product.</li>
 <li>Don't worry about the time. We are looking for a working app, not a
 polished one.</li>
 </ul>
-<h1 id="step1">Step 1</h1>
+<h1>Step 1</h1>
 <p><strong>Fork</strong> this repository on GitHub and <strong>clone</strong> it.</p>
 <p>Open the <strong>WeatherPlus</strong> project in Xcode.</p>
 <ul>
 <li>For the UI, you will use SwiftUI</li>
-<li>Use the <a href="https://en.wikipedia.org/wiki/Model–view–viewmodel">Model-View-ViewModel</a>
+<li>Use the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">Model-View-ViewModel</a>
 (MVVM) pattern. Bonus points for also using the Coordinator pattern.</li>
 </ul>
-<h1 id="step2">Step 2</h1>
+<h1>Step 2</h1>
 <p>Use the <a href="https://openweathermap.org/api">Open Weather API</a> to fetch weather
 details. Here is an example call requesting the hourly temperature and rainfall
 for the lat/long of New York City, NY. Below is an example query you will use. You must
@@ -29,95 +33,79 @@ update the latitude and longitude values in the URL to match the listed cities.<
 temperature and rainfall conditions for every hour of the day. A day is
 considered to run from 00:00:00 through 23:59:59. Hours should be displayed in
 the app according to the device's time display option.</p>
-
-<p>Use the following cities and their corresponding latitude and longitude</p>
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
-    <thead>
-    <tr>
-        <th style="border: 1px solid black;">City</th>
-        <th style="border: 1px solid black;">Lat</th>
-        <th style="border: 1px solid black;">Long</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="border: 1px solid black;">New York</td>
-        <td style="border: 1px solid black;">40.71</td>
-        <td style="border: 1px solid black;">-74.01</td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid black;">Dallas</td>
-        <td style="border: 1px solid black;">32.78</td>
-        <td style="border: 1px solid black;">-96.81</td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid black;">Miami</td>
-        <td style="border: 1px solid black;">25.77</td>
-        <td style="border: 1px solid black;">-80.19</td>
-    </tr>
-    </tbody>
+<table>
+<thead>
+<tr>
+<th>City</th>
+<th>Lat</th>
+<th>Long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New York</td>
+<td>40.71</td>
+<td>-74.01</td>
+</tr>
+<tr>
+<td>Dallas</td>
+<td>32.78</td>
+<td>-96.81</td>
+</tr>
+<tr>
+<td>Miami</td>
+<td>25.77</td>
+<td>-80.19</td>
+</tr>
+</tbody>
 </table>
-
-<p>Use the images included in the <code>assets</code> folder (in the root
-directory of your local clone) for a visual indicator of the weather
-conditions. There are three images for each asset. Talk us through why
-you choose a particular format.</p>
-<br/>
-<br/>
-
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
-    <thead>
-        <tr>
-            <th style="border: 1px solid black;">Precipitation</th>
-            <th style="border: 1px solid black;">Weather Condition</th>
-            <th style="border: 1px solid black;">Image</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="border: 1px solid black;">0.0</td>
-            <td style="border: 1px solid black;">Sunny</td>
-            <td style="border: 1px solid black;"><img src="assets/sunny.png" alt="sunny" /></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black;">0.0 < x < 1.0</td>
-            <td style="border: 1px solid black;">Light Rain</td>
-            <td style="border: 1px solid black;"><img src="assets/light-rain.png" alt="light rain" /></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black;">x >= 1.0</td>
-            <td style="border: 1px solid black;">Heavy Rain</td>
-            <td style="border: 1px solid black;"><img src="assets/heavy-rain.png" alt="heavy rain" /></td>
-        </tr>
-    </tbody>
+<p>Use the images included in the <code>assets</code> folder (in the root directory of your
+local clone) for a visual indicator of the weather conditions. There are three
+images for each asset. Talk us through why you choose a particular type.</p>
+<table>
+<thead>
+<tr>
+<th>Precipitation</th>
+<th>Weather Condition</th>
+<th>Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0</td>
+<td>Sunny</td>
+<td><img src="assets/sunny.png" alt="sunny"></td>
+</tr>
+<tr>
+<td>0.0 &lt; x &lt; 1.0</td>
+<td>Light Rain</td>
+<td><img src="assets/light-rain.png" alt="light rain"></td>
+</tr>
+<tr>
+<td>x &gt;= 1.0</td>
+<td>Heavy Rain</td>
+<td><img src="assets/heavy-rain.png" alt="heavy rain"></td>
+</tr>
+</tbody>
 </table>
-
-
-<p>Here is a rough design for the sample app…</p>
-<p><img src="https://user-images.githubusercontent.com/1957407/206615131-5afcbb18-1d7e-4b38-b9f1-7f4b1333defd.png" alt="weather app drawio" /></p>
-<h1 id="expectedfuntionalityindescendingorderofimportance">Expected funtionality in descending order of importance</h1>
+<p>Here is a rough design for the sample app...</p>
+<p><img src="https://user-images.githubusercontent.com/1957407/206615131-5afcbb18-1d7e-4b38-b9f1-7f4b1333defd.png" alt="weather app drawio"></p>
+<h1>Expected funtionality in descending order of importance</h1>
 <ol>
 <li>Fetch the current temperature for the three cities and list their current
-temperature, along with a rain or sun symbol as appropriate. </li>
+temperature, along with a rain or sun symbol as appropriate.</li>
 <li>Clicking on a city row will display the full weather report of that city
 for each hour of the day</li>
 <li>A control at the top of the main screen that switches between
 Celsius and Fahrenheit. This control can be any type you choose.</li>
 <li>The temperature system selected in view 1 should be carried to view 2.</li>
 </ol>
-<h1 id="evaluation">Evaluation</h1>
+<h1>Evaluation</h1>
 <ul>
 <li>Clean, readable code</li>
 <li>Knowledge of MVVM, delegation, UI and navigation, fetching and parsing JSON
 data, git.</li>
 </ul>
-<h1 id="relax">Relax</h1>
-<ul>
-<li>We're more concerned with your thought process and how you approach the
-problem than the final product.</li>
-<li>Don't worry about the time. We are looking for a working app, not a
-polished one.</li>
-</ul>
-<h1 id="acknowledgements">Acknowledgements</h1>
+<h1>Acknowledgements</h1>
 <p>Weather image assets <a href="http://www.freepik.com">designed by
 Anindyanfitri / Freepik</a>.</p>
