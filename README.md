@@ -3,8 +3,12 @@
 This is a coding challenge for iOS developers.  
 
 # Prerequisites
-Candidate should have Xcode 15.4+, at least one 15+ model iPhone emulator
-installed, and Git installed on their machine.
+## All candidates
+Candidate **must** have git installed on their machine.
+## Candidate on pre-Tahoe macOS
+Candidate must have Xcode 15.4+, and at least one iOS 15+ model iPhone emulator
+## Candidate with Tahoe (macOS 26+)
+Candidate must have Xcode 26+, and at least one iOS 26+ model iPhone emulator
 
 # Relax
 - We're more concerned with your thought process and how you approach the
