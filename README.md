@@ -5,8 +5,8 @@ This is a coding challenge for iOS developers.
 # Prerequisites
 ## All candidates
 Candidate **must** have git installed on their machine.
-## Candidate on pre-Tahoe macOS
-Candidate must have Xcode 15.4+, and at least one iOS 15+ model iPhone emulator
+## Candidate on Sequoia (macOS 15.3+)
+Candidate must have Xcode 16.4+, and at least one iOS 16+ model iPhone emulator
 ## Candidate with Tahoe (macOS 26+)
 Candidate must have Xcode 26+, and at least one iOS 26+ model iPhone emulator
 
