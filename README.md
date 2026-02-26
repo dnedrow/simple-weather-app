@@ -31,9 +31,12 @@ details. Here is an example call requesting the hourly temperature and rainfall
 for the lat/long of New York City, NY. Below is an example query you will use. You must
 update the latitude and longitude values in the URL to match the listed cities.
 
-`https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&hourly=temperature_2m,rain`
+[https://api.open-meteo.com/v1/forecast?latitude=40.71&amp;longitude=-74.01&amp;hourly=temperature_2m,rain](https://api.open-meteo.com/v1/forecast?latitude=40.71&amp;longitude=-74.01&amp;hourly=temperature_2m,rain)
 
-Note: You can use the above query's response to create your data model.
+> **Info**
+> 
+> You can use the above query's response to create your data model. Feel free to use AI or
+other tools to create the Swift model from the response.
 
 Please use the latitude and longitude of the following cities to fetch
 temperature and rainfall conditions for every hour of the day. A day is
